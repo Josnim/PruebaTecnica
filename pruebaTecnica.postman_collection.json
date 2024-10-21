@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "aebc5bde-57bd-42fb-964b-3592d0f2d646",
+		"name": "pruebaTecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19971898"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificacion\": \"123456218\",\r\n    \"nombre\": \"Nicolas\",\r\n    \"genero\": \"M\",\r\n    \"edad\": 23,\r\n    \"direccion\": \"Av. Abdón Calderón\",\r\n    \"telefono\": \"0969069300\",\r\n    \"contraseña\": \"pass123\",\r\n    \"estado\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8082/clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8082/clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "127.0.0.1:8082/clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8082/clientes/6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"identificacion\": \"123456214\",\r\n        \"nombre\": \"NicolasM\",\r\n        \"genero\": \"M\",\r\n        \"edad\": 23,\r\n        \"direccion\": \"Av. Abdón Calderón\",\r\n        \"telefono\": \"0969069300\",\r\n        \"clienteId\": 3,\r\n        \"contraseña\": \"pass123\",\r\n        \"estado\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8082/clientes/6"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8082/clientes/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"identificacion\": \"123450004\",\r\n        \"nombre\": \"Nicolas\",\r\n        \"genero\": \"M\",\r\n        \"edad\": 23,\r\n        \"direccion\": \"Av. Abdón Calderón\",\r\n        \"telefono\": \"0969069300\",\r\n        \"clienteId\": 3,\r\n        \"contraseña\": \"pass123\",\r\n        \"estado\": false\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "127.0.0.1:8082/clientes/3"
+			},
+			"response": []
+		}
+	]
+}
